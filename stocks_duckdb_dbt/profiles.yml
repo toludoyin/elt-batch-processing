@@ -1,0 +1,10 @@
+
+duckdb_dbt:
+  target: dev
+  outputs:
+    dev: 
+      type: duckdb
+      path: stocks_db.db
+      database: stocks_db
+      schema: main
+      threads: 4
