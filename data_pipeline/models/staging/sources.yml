@@ -1,0 +1,12 @@
+
+sources:
+  - name: stocks_db
+    database: stocks_db
+    schema: main
+    tables:
+      - name: stocks
+        columns: 
+        - name: index
+          tests: 
+            - unique
+            - not_null

@@ -1,0 +1,9 @@
+
+data_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: './data/stocks_db.db'
+      schema: main
+      threads: 4

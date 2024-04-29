@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: stg_stocks
+    columns:
+      - name: index
+        tests:
+          - unique
+          - not_null
+
+  - name: daily_stocks
+    columns:
+      - name: index
+        tests:
+          - unique
+          - not_null
