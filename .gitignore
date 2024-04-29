@@ -1,5 +1,2 @@
 
-.env
-.user.yml
 logs
-dbt_env
