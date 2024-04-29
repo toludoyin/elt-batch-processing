@@ -1,8 +1,9 @@
 # elt-batch-streaming
 
 ELT batch processing using duckdb as the database, dbt for transformation and perfect for the ochestration.
- 
-Setup
+
+Setup:
+
 Create a virtual environment
 
 Install DuckDB and connector dbt-duckdb
