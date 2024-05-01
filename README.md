@@ -1,6 +1,6 @@
 # elt-batch-streaming
 
-ELT batch processing using duckdb as the database, dbt for transformation and prefect for the ochestration.
+ELT batch processing using duckdb as the database, dbt for transformation and airflow for the ochestration.
 
 Setup:
 
