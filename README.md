@@ -1,6 +1,6 @@
 # elt-batch-streaming
 
-ELT batch processing using duckdb as the database, dbt for transformation and airflow for the ochestration.
+ELT batch processing, loading data from stocks API into duckdb database, dbt for transformation and airflow for ochestration.
 
 Setup:
 

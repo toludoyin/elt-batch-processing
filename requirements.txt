@@ -1,4 +1,3 @@
+# Astro Runtime includes the following pre-installed providers packages: https://docs.astronomer.io/astro/runtime-image-architecture#provider-packages
 
-dbt-duckdb==1.7.3
-duckdb==0.10.1
-requests==2.31.0
+astronomer-cosmos
