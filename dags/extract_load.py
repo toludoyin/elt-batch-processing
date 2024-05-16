@@ -12,6 +12,7 @@ import duckdb
     start_date=datetime(2024, 5, 1),
     schedule= "0 0 * * 6",
     catchup=False,
+    tags=["api-to-duckdb"]
 )
 
 def extract_load_dag():
@@ -32,6 +33,7 @@ def extract_load_dag():
         con = duckdb.connect("stocks_db.db")
         con.execute("CREATE TABLE IF NOT EXISTS stocks AS SELECT * FROM stocks_data")
         con.execute("INSERT INTO stocks SELECT * FROM stocks_data") 
+        # print(con.sql("show all tables").fetchall())
             
     data_from_api = extract_api_data()
     load_to_duckdb(data_from_api)
