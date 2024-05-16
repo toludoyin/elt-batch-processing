@@ -1,4 +1,5 @@
 dbt-core
 dbt-duckdb
 requests
+airflow-provider-duckdb
 duckdb
