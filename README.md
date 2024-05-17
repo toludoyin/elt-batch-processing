@@ -1,10 +1,10 @@
 ### elt-batch-streaming
 
-ELT batch processing, extract data from stocks API into **duckdb** database, transformed the data with **dbt** and **airflow** to ochestrate the workflow.
+ELT batch processing, extract data from stocks API into *duckdb* database, transformed the data with *dbt* and *airflow* to ochestrate the workflow.
 
 Setup:
 
-* Without airflow
+Without airflow
 
 * Create a virtual environment
 
