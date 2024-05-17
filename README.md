@@ -20,7 +20,7 @@ Without airflow
 
 With airflow
 
-* Use the `astro dev init`` - to setup airflow
+* Use the `astro dev init` - to setup airflow
 
 * Install dependencies
 
