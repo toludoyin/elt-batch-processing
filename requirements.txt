@@ -3,3 +3,5 @@
 astronomer-cosmos
 airflow-provider-duckdb
 duckdb
+dbt-airflow
+dbt-duckdb
