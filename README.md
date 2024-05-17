@@ -1,18 +1,27 @@
-# elt-batch-streaming
+### elt-batch-streaming
 
-ELT batch processing, loading data from stocks API into duckdb database, dbt for transformation and airflow for ochestration.
+ELT batch processing, extract data from stocks API into **duckdb** database, transformed the data with **dbt** and **airflow** to ochestrate the workflow.
 
 Setup:
 
-Create a virtual environment
+* Without airflow
 
-Install DuckDB and connector dbt-duckdb
+* Create a virtual environment
 
-Extract data from API into DuckDB
+* Install DuckDB and connector dbt-duckdb
 
-Create dbt project
+* Extract data from API into DuckDB
 
-initialize dbt with dbt init
+* Create dbt project
 
-dbt debug - test connections
+* Initialize dbt with `dbt init`
 
+* Use `dbt debug` to test connections
+
+With airflow
+
+* Use the `astro dev init`` - to setup airflow
+
+* Install dependencies
+
+* Start airflow using `astro dev start`  
