@@ -7,10 +7,11 @@ import pandas as pd
 import re
 import duckdb
 
+stocks_dataset = Dataset("duckdb://stocks_db")
 
 @dag(
-    start_date=datetime(2024, 5, 1),
-    schedule= "0 0 * * 6",
+    start_date=datetime(2024, 5, 11),
+    schedule= "0 1 * * 6",
     catchup=False,
     tags=["api-to-duckdb"]
 )
@@ -19,7 +20,6 @@ def extract_load_dag():
 
     @task
     def extract_api_data():
-        outlets=[Dataset("stocks_db")]
         url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=demo'
         api_data = requests.get(url)
         return api_data.json()["Time Series (Daily)"]
@@ -33,7 +33,6 @@ def extract_load_dag():
         con = duckdb.connect("stocks_db.db")
         con.execute("CREATE TABLE IF NOT EXISTS stocks AS SELECT * FROM stocks_data")
         con.execute("INSERT INTO stocks SELECT * FROM stocks_data") 
-        # print(con.sql("show all tables").fetchall())
             
     data_from_api = extract_api_data()
     load_to_duckdb(data_from_api)
