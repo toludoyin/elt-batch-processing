@@ -22,7 +22,7 @@ Without airflow
 
 * Transform data
 
-* Run `dbt run`
+* Execute trasformation process with `dbt run`
   
 
 With airflow for orchestration
