@@ -16,7 +16,7 @@ Without airflow
 
 * Initialize dbt with `dbt init`
 
-* Define configuration in `profiles.yml` file
+* Configure destination in `profiles.yml` file
 
 * Use `dbt debug` to test connections
 
