@@ -1,6 +1,6 @@
 ### elt-batch-processing
 
-ELT batch processing, extract data from stocks API into *duckdb* database, transformed the data with *dbt* and *airflow* to ochestrate the workflow.
+ELT batch processing, extract data from stocks API into *duckdb* database, transform it using *dbt*, and ochestrate the workflow using *airflow*.
 
 Setup:
 
@@ -8,7 +8,7 @@ Without airflow
 
 * Create a virtual environment
 
-* Install DuckDB and connector dbt-duckdb
+* Install DuckDB, dbt-duckdb connector and other dependecies
 
 * Extract data from API into DuckDB
 
@@ -18,7 +18,12 @@ Without airflow
 
 * Use `dbt debug` to test connections
 
-With airflow
+* Transform data
+
+* Run `dbt run`
+  
+
+With airflow for orchestration
 
 * Use the `astro dev init` - to setup airflow
 
