@@ -20,9 +20,11 @@ Without airflow
 
 * Use `dbt debug` to test connections
 
-* Transform data
+* Define models
 
-* Execute trasformation process with `dbt run`
+* Execute trasformation with `dbt run`
+
+* Verify content in database
   
 
 With airflow for orchestration
