@@ -1,4 +1,4 @@
-### elt-batch-streaming
+### elt-batch-processing
 
 ELT batch processing, extract data from stocks API into *duckdb* database, transformed the data with *dbt* and *airflow* to ochestrate the workflow.
 
