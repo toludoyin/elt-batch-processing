@@ -2,7 +2,7 @@
 
 ELT batch processing, extract data from stocks API into *duckdb* database, transform it using *dbt*, and ochestrate the workflow using *airflow*.
 
-Setup:
+**Setup**:
 
 Without airflow
 
